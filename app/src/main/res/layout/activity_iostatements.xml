@@ -74,18 +74,35 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/solve_button"
         android:onClick="OnClick"
         android:text="solve!"
-        android:textSize="16dp"
-        android:textColor="#660101"
         android:textAllCaps="false"
-        android:background="@drawable/solve_button"
+        android:textColor="#f5a2a2"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.678"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number2"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_button"
+        android:onClick="OnClick"
+        android:text="clear"
+        android:textAllCaps="false"
+        android:textColor="#B9660101"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        app:layout_constraintVertical_bias="0.063" />
 
     <TextView
         android:id="@+id/textView2"

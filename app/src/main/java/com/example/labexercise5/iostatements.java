@@ -12,7 +12,7 @@ public class iostatements extends AppCompatActivity {
 
     EditText num1, num2;
     TextView sum, diff, prod, quo;
-    Button backButton;
+    Button backButton, clearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,19 @@ public class iostatements extends AppCompatActivity {
         diff = findViewById(R.id.differenceAns);
         prod = findViewById(R.id.productAns);
         quo = findViewById(R.id.quotientAns);
+
+        clearButton = findViewById(R.id.clearButton);
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                num1.getText().clear();
+                num2.getText().clear();
+                sum.setText("");
+                diff.setText("");
+                prod.setText("");
+                quo.setText("");
+            }
+        });
 
         backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
